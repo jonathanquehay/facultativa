@@ -1,9 +1,9 @@
 var dato1 = document.getElementById("dato1");
 var dato2 = document.getElementById("dato2");
 var suma = document.getElementById("suma"); //boton de suma - evento click
-var resta = document.getElementById("resta"); //boton de suma - evento click
-var multiplica = document.getElementById("multiplicacion"); //boton de suma - evento click
-var divide = document.getElementById("division"); //boton de suma - evento click
+var resta = document.getElementById("resta"); //boton de resta - evento click
+var multiplica = document.getElementById("multiplicacion"); //boton de multiplica - evento click
+var divide = document.getElementById("division"); //boton de divide - evento click
 var resul = document.getElementById("resul");
 var resultado;
 
