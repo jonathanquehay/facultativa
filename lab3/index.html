@@ -101,22 +101,124 @@
     </section>
 
     <!-- Segunda Sección Contacto mz-forms-->
-    <section>
-      
+    <section class="row">
+      <!-- Columna con el form -->
+      <h2 class="center-align">Contacto</h2>
+      <p class="center-align blue-text">Envienos sus comentarios!</p>
+      <article class="formula col s12 m6 l6">
+        <h4 class="center-align">Rellene los campos</h4>
+        <hr>
+        <form action="">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input type="text" id="icon_prefix" class="validate">
+            <label for="first_name">Nombre completo</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">contact_mail</i>
+            <input type="email" id="icon_prefix" class="validate">
+            <label for="email" data-error="wrong" data-success="right">Correo electrónico</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">chat</i>
+            <textarea id="icon_prefix" class="materialize-textarea"></textarea>
+            <label for="textarea1">Comentario</label>
+          </div>
+          <button class="btn waves-effect waves-light blue" type="submit" name="action">Enviar
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </article>
+      <!-- Columna con informacion extra -->
+      <article class="extra col s12 m6 l6">
+        <h4 class="center-align">Información</h4>
+        <ul>
+          <li>Dirección: <p class="blue-text">De Gasolinera Puma 800 mts al oeste, Juigalpa-Chontales</p> </li>
+          <li>Correo electrónico: <p class=" blue-text">proyectoweb@proyecto.com</p></li>
+          <li>Teléfono: <p class=" orange-text">(505) 2512-6789</p> <p class=" orange-text">(505) 84320840</p> </li>
+        </ul>
+      </article>
     </section>
-    
 
+    <div class="parallax-container">
+      <div class=" parallax"><img src="img/imagen5.jpg"></div>
+    </div>
+
+    <section class="row">
+      <!-- Seccion de noticias -->
+      <h2 class="center-align">Noticias</h2>
+      <p class="center-align blue-text">Ven y descubre lo nuevo en tecnología</p>
+      
+      <article class="col s12 m3 l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/imagen1.jpg" alt=""/>
+            <span class="card-title"></span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Ir a Noticia 1</a>
+          </div>
+        </div>
+      </article>
+      <!-- ******************** -->
+      <article class="col s12 m3 l3">
+          <div class="card">
+              <div class="card-image">
+                <img src="img/imagen4.jpg" alt=""/>
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Ir a Noticia 2</a>
+              </div>
+            </div>
+      </article>
+      <!-- ******************** -->
+      <article class="col s12 m3 l3">
+          <div class="card">
+              <div class="card-image">
+                <img src="img/imagen3.jpg" alt=""/>
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Ir a Noticia 3</a>
+              </div>
+            </div>
+      </article>
+      <!-- ******************** -->
+      <article class="col s12 m3 l3">
+          <div class="card">
+              <div class="card-image">
+                <img src="img/imagen2.jpg" alt=""/>
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Ir a Noticia 4</a>
+              </div>
+            </div>
+      </article>
+    </section>
   </main>
 
-
-
-
-
-
-
-
-
-    
+<!-- Pie de pagina mz-footer -->
+  <footer class="grey darken-4 page-footer">
+    <div class="footer-copyright">
+      <div class="container center">
+        © 2017 José Jonathan Moreno
+      </div>
+    </div>
+  </footer>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/materialize.min.js"></script>
@@ -126,6 +228,7 @@
       $(".button-collapse").sideNav();
       $(".dropdown-button").dropdown();
       $('.slider').slider({height:250});
+      $('.parallax').parallax();	
     })
   </script>
 </body>

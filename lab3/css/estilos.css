@@ -21,6 +21,11 @@
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+
+.extra, .formula{
+  margin-top: 40px;
+}
+
 #sidenav-overlay {
   z-index: 0;
 }
@@ -29,3 +34,7 @@ nav ul a:hover {
     background: #bbdefb;
     color: black;
 }
+.parallax-container{
+  height: 250px;
+}
+
