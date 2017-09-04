@@ -17,16 +17,16 @@
         <a href="#" class="brand-logo">JONATHAN</a>
         <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Noticias</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#noticias">Noticias</a></li>
         </ul>
         <ul class="side-nav" id="mobile-menu">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Noticias</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#noticias">Noticias</a></li>
         </ul>
       </div>
     </nav>
@@ -34,7 +34,7 @@
 
 
 <!-- Este es el slider del sitio mz-slider -->
-  <div class="slider">
+  <div class="slider menu" id="inicio">
     <ul class="slides">
       <li>
         <img src="img/imagen1.jpg" alt=""> <!-- random image -->
@@ -71,7 +71,7 @@
 
   <main>
     <!-- Seccion de servicios mz-promo-->
-    <section class="row">
+    <section class="row menu" id="servicios">
       <h2 class="center-align">Servicios</h2>
       <p class="center-align blue-text">Estos son nuestros servicios para usted!</p>
      <!-- PRIMER ARTICULO UNA COLUMNA -->
@@ -101,7 +101,7 @@
     </section>
 
     <!-- Segunda Sección Contacto mz-forms-->
-    <section class="row">
+    <section class="row menu" id="contacto">
       <!-- Columna con el form -->
       <h2 class="center-align">Contacto</h2>
       <p class="center-align blue-text">Envienos sus comentarios!</p>
@@ -144,7 +144,7 @@
       <div class=" parallax"><img src="img/imagen5.jpg"></div>
     </div>
 
-    <section class="row">
+    <section class="row menu" id="noticias">
       <!-- Seccion de noticias -->
       <h2 class="center-align">Noticias</h2>
       <p class="center-align blue-text">Ven y descubre lo nuevo en tecnología</p>
@@ -229,6 +229,7 @@
       $(".dropdown-button").dropdown();
       $('.slider').slider({height:250});
       $('.parallax').parallax();	
+      $('.menu').scrollSpy();
     })
   </script>
 </body>
